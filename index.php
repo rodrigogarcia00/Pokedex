@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "conexion.php";
 
 $busqueda = "";
@@ -57,7 +58,12 @@ include("header.php");
                         <th>Tipo</th>
                         <th>Número</th>
                         <th>Nombre</th>
-                        <th>Acciones</th>
+                        <th>Detalle</th>
+                        <?php 
+                        if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'ADMIN') { 
+                        echo "<th>Acciones Admin</th>";
+                        }
+                        ?>
                     </tr>
                 </thead>
 
@@ -70,6 +76,12 @@ include("header.php");
                             echo "<td>" . $pokemon->numero . "</td>";
                             echo "<td class='w3-bold'>" . $pokemon->nombre . "</td>";
                             echo "<td> <a class='w3-button w3-border' href='detalle-pokemon.php?id=" . $pokemon->id . "'> Ver detalle </a> </td>";
+                            if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'ADMIN') {
+                            echo "<td>";
+                            echo "<a class='w3-button w3-blue w3-margin-right' href='modificar-pokemon.php?id=" . $pokemon->id . "'>Modificación</a>";
+                            echo "<a class='w3-button w3-red' href='baja-pokemon.php?id=" . $pokemon->id . "'>Baja</a>";
+                            echo "</td>";
+                            }
                         echo "</tr>";
                     }
                     ?>
