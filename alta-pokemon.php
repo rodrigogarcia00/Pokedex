@@ -41,11 +41,11 @@ include "header.php";
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
                     <label class="w3-text-bold">Altura (m)</label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" name="altura">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" step="0.01" name="altura">
                 </div>
                 <div class="w3-half">
                     <label class="w3-text-bold">Peso (kg)</label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" name="peso">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" step="0.01" name="peso">
                 </div>
             </div>
 
