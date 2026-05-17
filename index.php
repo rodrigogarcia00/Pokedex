@@ -87,6 +87,12 @@ include("header.php");
                     ?>
                 </tbody>
             </table>
+
+            <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'ADMIN'): ?>
+                <div class="w3-center w3-margin-top w3-margin-bottom">
+                    <a href="alta-pokemon.php" class="w3-button w3-green w3-block">Nuevo pokemon</a>
+                </div>
+            <?php endif; ?>
         </section>
     </main>
 </body>
