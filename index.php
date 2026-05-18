@@ -51,6 +51,7 @@ include("header.php");
         ?>
 
         <section class="w3-margin-top tabla-contenedor">
+            <div class="w3-responsive">
             <table class="w3-table-all w3-centered tabla-pokemons">
                 <thead>
                     <tr>
@@ -87,6 +88,7 @@ include("header.php");
                     ?>
                 </tbody>
             </table>
+            </div>
 
             <?php if(isset($_SESSION['rol']) && $_SESSION['rol'] == 'ADMIN'): ?>
                 <div class="w3-center w3-margin-top w3-margin-bottom">

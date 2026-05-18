@@ -28,7 +28,7 @@ include "header.php";
 ?>
 
 <main class="w3-container w3-padding-64">
-    <div class="w3-content w3-card-4 w3-white w3-padding w3-round-large" style="max-width:600px">
+    <div class="w3-content w3-card-4 w3-white w3-padding w3-round-large formulario-pokemon" >
 
         <h2 class="w3-center w3-text-blue">Modificar Pokémon</h2>
 

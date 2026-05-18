@@ -66,6 +66,10 @@ body {
     width: 3.5em;
     height: 3.5em;
 }
+tbody tr td{
+    vertical-align: middle !important;
+}
+
 
 @media screen and (max-width: 768px) {
     .header-pokedex {

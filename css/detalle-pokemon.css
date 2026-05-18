@@ -12,3 +12,15 @@ body {
     width: 250px;
     height: auto;
 }
+.formulario-pokemon{
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    .formulario-pokemon{
+        width: unset;
+        max-width: unset;
+        margin: unset;
+    }
+}
