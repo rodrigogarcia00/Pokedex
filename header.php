@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="w3-row w3-padding header-pokedex">
-        <div class="w3-col l3 m3 s12 logo">
-            Logo
+        <div class="w3-col l3 m3 s12">
+            <img src="img/logo-pokedex.png" alt="logo-pokedex" class="logo">
         </div>
         <div class="w3-col l6 m6 s12 titulo">
             <h1>Pokédex</h1>
